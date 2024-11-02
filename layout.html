@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aina's Blog</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
-        * {
+         * {
             margin:0px;
             padding:0px;
             box-sizing: border-box;
         }
 
-        /* p{
-            background-color: grey;
-            outline: solid red 5px;
-        } */
-        
+      
         .container{
             display: flex;
             flex-direction: column;
-            min-height: 10000px;
+            min-height: 1700px;
             /* background-color: grey; */
             width: 100%;
         }
@@ -30,64 +27,80 @@
             flex-direction: row;
             min-height: 70px;
             width: 100%;
-            background-color: rgb(73, 54, 40);
-            position: relative;
+            background-color: rgb(170, 179, 150);
+            justify-content: center;
         }
 
-        
+        .logo h1{
+            font-size: 50px;
+        }
 
         .navigation {
             display:flex;
             flex-direction: row;
-            min-height:200px;
+            max-height:300px;
             width: 100%;
-            margin-top: 1px;
+            margin-top: 0px;
         
         }
 
         .navigation img {
             width: 100%;
             height: auto;
-            object-fit: contain;
+            object-fit:cover; 
         }
-
-
-        .content{
-
-            display: flex;
-            flex-direction: row;
-            min-height: 500px;
-            width: 100%;
-            /* background-color: red; */
-            margin-top: 70px;
-            
-        }
-
-        
-
 
         .footer{
             display: flex;
             flex-direction: row;
             min-height: 30px;
             width: 100%;
-            /* background-color: lightsalmon; */
             margin-top: 10px;
             justify-content: center;
         }
 
         body {
-
             background-color:  rgb(255, 247, 209);
+        }
+
+        .content{
+            margin-top: 30px;
+            display: flex;
+            flex-direction:row;
+            min-height: 500px;
+            width: 100%;
+            background-color: rgb(255, 247, 209);
+
         }
 
         .hobbies {
             display: flex;
+            gap: 40px;
             flex-direction: row;
-            min-height: 300px;
+            max-height: 400px;
             width: 100%;
-            background-color:   rgb(255, 208, 155);
+            background-color:  rgb(193, 207, 161);
             margin-top: 30px;
+            justify-content:right;
+        }
+
+        .hobby-item {
+            text-align: center;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .hobbies img {
+            height: 200px;
+            width: 200px;
+            margin-top: 50px;
+            margin-right: 50px;
+        }
+        
+        .hobbies h2{
+            font-size: 80px;
+            margin-top: 80px;
+            margin-right: 100px;
         }
 
         .imgcontainer {
@@ -95,28 +108,59 @@
             flex-direction:row;
             min-height: 300px;
             width: 100%;
-            background-color: rgb(171, 136, 109);
+            background-color: rgb(231, 204, 204);
+            justify-content: center;
+
         }
 
         .img1 {
             display: flex;
             flex-direction: row;
-            width: 45%;
+            width: 50%;
             margin-top: 30px;
             margin-left: 30px;
             margin-bottom: 30px;
             background-color:  rgb(255, 247, 209);
+            justify-content: left;
+            
+        }
+
+        .img1 img{
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        .img1 p{
+            font-size: 20px;
+            margin-top: 140px;
+            margin-left: 60px;
+            margin-right: 30px;
         }
 
         .img2{
             display: flex;
             flex-direction: row;
-            width: 45%;
+            width: 50%;
             margin-top: 30px;
             margin-left: 145px;
             margin-right: 30px;
             margin-bottom: 30px;
             background-color:  rgb(255, 247, 209);
+            justify-content: left;
+        }
+
+        .img2 img{
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        .img2 p{
+            font-size: 20px;
+            margin-top: 140px;
+            margin-left: 60px;
+            margin-right: 30px;
         }
 
     </style>
@@ -129,13 +173,11 @@
             <h1>Aina Nisa's Portfolio</h1>
         </div>
         <div class="navigation">
-            <img src="flower.jpg" alt="">
-            
+            <img src="nav.jpg" alt="">
         </div>
         <div class="content">
-            <div class="body">
 
-                <table style="width:fit-content;">
+                <table style="width: 100%;">
                     <tr>
                         <th>Name</th>
                         <td>Nurulaina Nisa binti Sahanuan</td>
@@ -198,21 +240,53 @@
                     </tr>
             
                 </table>
-            </div>
+        </div>
+        
+        <div class="hobbies">
+            <h2>My Hobbies</h2>
+            <figure class="hobby-item">
+                <img src="photography.jpg" alt="Photography">
+                <figcaption>Photography</figcaption>
+            </figure>
+            <figure class="hobby-item">
+                <img src="reading.jpg" alt="Reading">
+                <figcaption>Reading</figcaption>
+            </figure>
+            <figure class="hobby-item">
+                <img src="movie.jpg" alt="Watching Movies">
+                <figcaption>Watching Movies</figcaption>
+            </figure>
             
         </div>
-        <div class="hobbies"></div>
         <div class="imgcontainer">
-            <div class="img1"></div>
-            <div class="img2"></div>           
+            <div class="img1">
+                <img src="raya.jpg" style="height: 300px; width: 300px;">
+                <p>~ Raya Celebration with The Girls</p>
+            </div>
+            <div class="img2">
+                <img src="secretsanta.jpg" style="height: 300px; width: 400px;">
+                <p>~ Secret Santa with Classmates</p>
+            </div>           
         </div>
         <div class="imgcontainer">
-            <div class="img1"></div>
-            <div class="img2"></div>           
+            <div class="img1">
+                <img src="ttm.jpg" style="height: 300px; width: 300px;">
+                <p>~ Our One-Day-Trip to Melaka </p>
+            </div>
+            <div class="img2">
+                <img src="dean.jpg" style="height: 300px; width: 400px;">
+                <p>~ Dean's List Award</p>
+            </div>           
         </div>
         <div class="imgcontainer">
-            <div class="img1"></div>
-            <div class="img2"></div>           
+            <div class="img1">
+                <img src="debate.jpg" style="height: 300px; width: 300px;">
+                <p>~ Media Team for Debate Competition 2024</p>
+            </div>
+            <div class="img2">
+                <img src="bday2.jpg" style="height: 300px; width: 400px;">
+                <p>~ Birthday Celebration</p>
+            </div>           
         </div>
         
         <div class="footer">
