@@ -11,6 +11,13 @@
         margin-left: 30px;
         width: 100%;
     }
+
+    h1{
+        font-family:'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        
+    }
   
     tr:nth-child(even) {
     background-color: rgba(244, 207, 224, 0.679);}
