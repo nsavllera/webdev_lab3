@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aina's Blog</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         * {
             margin:0px;
@@ -66,27 +67,12 @@
             width: 100%;
             /* background-color: red; */
             margin-top: 70px;
+            margin
             justify-content: space-between;
         }
 
-        .side-bar{
+        
 
-            display: flex;
-            flex-direction: column;
-            background-color: rgb(175, 255, 255);
-            flex-basis: 20%;
-        }
-
-        .side-bar a{
-
-            text-decoration: none; 
-            color: inherit;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 20px;
-            margin-top: 10px;
-
-        }
 
 
         .body-area{
@@ -110,7 +96,7 @@
 
         body {
 
-            background-color: beige;
+            background-color: rgb(232, 152, 206);
         }
 
         .hobbies {
@@ -151,26 +137,63 @@
             background-color: beige;
         }
 
+        /*.imgcontainer2 {
+            display: flex;
+            flex-direction:row;
+            min-height: 300px;
+            width: 100%;
+            background-color: darkslateblue;
+        }
+
         .img3 {
             display: flex;
             flex-direction: row;
             width: 45%;
-            margin-top: 230px;
+            margin-top: 30px;
             margin-left: 30px;
-            margin-bottom: 700px;
+            margin-bottom: 30px;
             background-color: beige;
         }
 
-        .img4{
+        .img4 {
             display: flex;
             flex-direction: row;
             width: 45%;
-            margin-top: 230px;
+            margin-top: 30px;
             margin-left: 145px;
             margin-right: 30px;
-            margin-bottom: 700px;
+            margin-bottom: 30px;
             background-color: beige;
         }
+
+        .imgcontainer3 {
+            display: flex;
+            flex-direction:row;
+            min-height: 300px;
+            width: 100%;
+            background-color: darkslateblue;
+        }
+
+        .img5 {
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            background-color: beige;
+        }
+
+        .img6{
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+            margin-top: 30px;
+            margin-left: 145px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            background-color: beige;
+        }*/
        
     </style>
 
@@ -186,32 +209,90 @@
             
         </div>
         <div class="content">
-            <div class="side-bar">
-                <a href="">About Me</a>
-                <hr>
-                <a href="">My Skills</a>
-                <hr>
-                <a href="">My Pictures</a>
-            </div>
-            <div class="body-area">
-                <img src="photo.jpg" alt="" width="400px">
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-                <p style="font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ex ab neque, alias, facilis, eaque magnam quod itaque adipisci autem laboriosam sit cupiditate? Quos libero repellendus tenetur perferendis, dolorem veritatis rem cupiditate beatae. Est eos perferendis atque voluptas doloremque illum esse dolorem dicta. Commodi a voluptatem fugit similique consequatur quis?</p>
+            <div class="body">
 
+                <table style=>
+                    <tr>
+                        <th>Name</th>
+                        <td >Nurulaina Nisa binti Sahanuan</td>
+                        <td><img src="example.jpg"
+                            style="height: 120px; width: 170px;"></td>
+                    </tr>
+                    <tr>
+                        <th>Date Of Birth</th>
+                        <td colspan="2">01/09/2003</td>
+                    </tr>
+                    <tr>
+                        <th>Religion</th>
+                        <td colspan="2">Islam</td>
+                    </tr>
+                    <tr >
+                        <th rowspan="4">Address</th>
+                        <th style="width: 30%">Street</th>
+                        <td>1,Jalan Subang 4</td>   
+                    </tr>
+                    <tr>
+                        <th style="width: 30%">Town</th>
+                        <td>Taman Kobena</td>
+                    </tr>
+                    <tr>
+                        <th style="width: 30%">District</th>
+                        <td>Johor Bahru</td>
+                    </tr>
+                    <tr>
+                        <th style="width: 30%">State</th>
+                        <td>Johor</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Contact</th>
+                        <th style="width: 30%">Mobile Phone</th>
+                        <td>011 11847944</td>
+                    </tr>
+                    <tr>
+                        <th style="width: 30%">Social Media</th>
+                        <td>nsavllera@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th style="width: 30%">Website</th>
+                        <td>https://nsavllera.github.io/webdev_lab2/</td>
+                    </tr>
+                    <tr>
+                        <th>Course and Institution</th>
+                        <td colspan="2">Computer Science (Software Engineering), UTHM</td>
+                    </tr>
+                    <tr>
+                        <th>Programming Skills</th>
+                        <td colspan="2">Competent</td>
+                    </tr>
+                    <tr>
+                        <th>Personal Interest</th>
+                        <td colspan="2">I am more into designing and creativity</td>
+                    </tr>
+                    <tr>
+                        <th>Future Plan in 2025</th>
+                        <td colspan="2">To Pass the Final Year Project with Excellence</td>
+                    </tr>
+            
+                </table>
             </div>
+            
         </div>
         <div class="hobbies"></div>
         <div class="imgcontainer">
             <div class="img1"></div>
-            <div class="img2"></div>
-            
-            
+            <div class="img2"></div>           
         </div>
+        <div class="imgcontainer">
+            <div class="img1"></div>
+            <div class="img2"></div>           
+        </div>
+        <div class="imgcontainer">
+            <div class="img1"></div>
+            <div class="img2"></div>           
+        </div>
+        
         <div class="footer">
-            &copy 2024 Ariffin
+            &copy 2024 Aina Nisa
         </div>
 
     </div>
