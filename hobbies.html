@@ -18,7 +18,6 @@
             display: flex;
             flex-direction: column;
             min-height: 900px;
-            /* background-color: grey; */
             width: 100%;
         }
 
@@ -74,7 +73,6 @@
         }
 
         .side-bar{
-
             display: flex;
             flex-direction: column;
             background-color: rgb(85, 124, 85);
@@ -116,17 +114,43 @@
             width: 100%;
             background-color: rgb(255, 247, 209);
             margin-top: 10px;
-            object-fit: cover;
-            gap: 10px;
 
         }
 
-        .content img{
-            object-fit: cover;
-            width: 90%;
-            height: 60%;
+        .hobbies {
+            display: flex;
+            gap: 40px;
+            flex-direction: row;
+            max-height: 400px;
+            width: 100%;
+            background-color:  rgb(193, 207, 161);
+            margin-top: 10px;
+            justify-content:right;
         }
-      
+
+        .hobby-item {
+            text-align: center;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .hobbies img {
+            height: 200px;
+            width: 200px;
+            margin-top: 70px;
+            margin-right: 50px;
+        }
+        
+        .hobbies p{
+            font-size: 20px;
+            margin-top: 80px;
+            margin-right: 100px;
+            margin-left: 30px;
+            font-style: italic;
+        }
+
+       
+       
 
     </style>
 
@@ -141,7 +165,7 @@
             <img src="nav.jpg" alt="">
         </div>
         <div class="navigation">
-            <a href="layout.html">Home</a>  
+            <a href="layout.html">Home</a> 
             <a href="https://www.uthm.edu.my/en/">UTHM</a> 
             <a href="https://author.uthm.edu.my/">Author</a> 
             <a href="https://my.linkedin.com/in/nurulaina-nisa-2a86a8253">LinkedIn</a>
@@ -153,13 +177,28 @@
                 <a href="hobbies.html">My Hobbies</a> 
                 <a href="uni.html">University's Life</a> 
             </div>
-            <img src="welcome to my profile!.jpg">      
+            <div class="hobbies">
+                <p>I have lots of hobbies to list on here but these are the top 3 hobbies that I love.</p>
+                <figure class="hobby-item">
+                    <img src="photography.jpg" alt="Photography">
+                    <figcaption>Photography</figcaption>
+                </figure>
+                <figure class="hobby-item">
+                    <img src="reading.jpg" alt="Reading">
+                    <figcaption>Reading</figcaption>
+                </figure>
+                <figure class="hobby-item">
+                    <img src="movie.jpg" alt="Watching Movies">
+                    <figcaption>Watching Movies</figcaption>
+                </figure>
+                
+            </div>
         </div>
-
         <div class="footer">
             &copy 2024 Aina Nisa
         </div>
-
+        
+      
     </div>
     
 </body>
